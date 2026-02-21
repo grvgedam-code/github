@@ -1,118 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><style>
-.fade-in {
-    animation: fadeIn 1.2s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {opacity: 0; transform: translateY(20px);}
-    to {opacity: 1; transform: translateY(0);}
-}
-</style>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Berozgar - Find Local Jobs</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-body{background:#f8f9fc;color:#222;}
-header{
-    background:linear-gradient(135deg,#0f172a,#1e293b);
-    color:white;
-    padding:80px 20px;
-    text-align:center;
-}
-header h1{font-size:42px;margin-bottom:15px;}
-header p{font-size:18px;opacity:.9;margin-bottom:30px;}
-.btn{
-    background:#22c55e;
-    color:white;
-    padding:12px 30px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:600;
-    transition:.3s;
-}
-.btn:hover{background:#16a34a;}
-.section{
-    padding:60px 20px;
-    text-align:center;
-}
-.section h2{
-    font-size:32px;
-    margin-bottom:30px;
-}
-.card-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-    max-width:1000px;
-    margin:auto;
-}
-.card{
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.05);
-    transition:.3s;
-}
-.card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 15px 35px rgba(0,0,0,.1);
-}
-footer{
-    background:#0f172a;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:40px;
-}
-input,select{
-    padding:12px;
-    width:100%;
-    border-radius:8px;
-    border:1px solid #ddd;
-    margin-bottom:15px;
-}
-.search-box{
-    max-width:500px;
-    margin:auto;
-}
-</style>
-</head>
-
-<body>
-
-<header><header class="fade-in">
-<h1>Berozgar</h1>
-<p>Helping Educated Youth Find Local Jobs & Support Services</p>
-<a href="#signup" class="btn">Join Now</a>Join Now</a>
-</header>
-
-<section id="signup" class="section fade-in">
-<h2>Find Jobs Near You</h2>
-<div class="search-box">
-<input type="text" placeholder="Enter your city (e.g. Nagpur)">
-<select>
-<option>Select Job Type</option>
-<option>Part Time</option>
-<option>Full Time</option>
-<option>Internship</option>
-<option>Freelance</option>
-</select>
-<a href="#" class="btn">Search Jobs</a>
-</div>
-</section>
-
-<!DOCTYPE html>
-<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Berozgar - Local Jobs Platform</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 *{
@@ -122,47 +15,52 @@ input,select{
     font-family:'Poppins',sans-serif;
 }
 
-body{
-    background:#f5f7fa;
-    color:#222;
+html{
     scroll-behavior:smooth;
+}
+
+body{
+    background:#f1f5f9;
+    color:#111;
 }
 
 /* HERO SECTION */
 .hero{
     height:100vh;
-    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-    url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');
+    background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=2000&q=80');
     background-size:cover;
     background-position:center;
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
     text-align:center;
     color:white;
     padding:20px;
 }
 
 .hero-content{
-    animation:fadeUp 1.5s ease;
+    max-width:800px;
+    animation:fadeUp 1.5s ease forwards;
 }
 
 .hero h1{
-    font-size:48px;
+    font-size:64px;
+    font-weight:800;
     margin-bottom:20px;
 }
 
 .hero p{
-    font-size:18px;
-    margin-bottom:30px;
+    font-size:22px;
+    margin-bottom:35px;
 }
 
 .btn{
     display:inline-block;
-    padding:14px 35px;
+    padding:16px 40px;
+    border-radius:50px;
     background:#22c55e;
     color:white;
-    border-radius:40px;
     text-decoration:none;
     font-weight:600;
     transition:.3s;
@@ -170,67 +68,88 @@ body{
 
 .btn:hover{
     background:#16a34a;
-    transform:scale(1.05);
+    transform:scale(1.1);
 }
 
 /* SECTIONS */
 .section{
-    padding:80px 20px;
+    padding:100px 20px;
     text-align:center;
 }
 
 .section h2{
-    font-size:32px;
-    margin-bottom:40px;
+    font-size:40px;
+    margin-bottom:50px;
+    position:relative;
+}
+
+/* SEARCH BOX */
+.search-box{
+    max-width:600px;
+    margin:auto;
+    animation:fadeUp 1.2s ease;
+}
+
+input,select,textarea{
+    width:100%;
+    padding:16px;
+    margin-bottom:18px;
+    border-radius:10px;
+    border:1px solid #ccc;
+    font-size:16px;
 }
 
 /* CARDS */
 .cards{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-    max-width:1100px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    max-width:1200px;
     margin:auto;
 }
 
 .card{
     background:white;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:.3s;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.1);
+    transition:.4s;
 }
 
 .card:hover{
-    transform:translateY(-10px);
+    transform:translateY(-15px);
 }
 
-/* SEARCH BOX */
-.search-box{
-    max-width:500px;
+/* BACKBENCHERS ADDA */
+.adda{
+    background:linear-gradient(135deg,#6366f1,#8b5cf6);
+    color:white;
+    border-radius:25px;
+    padding:50px 30px;
+    max-width:900px;
     margin:auto;
-}
-
-input,select{
-    width:100%;
-    padding:14px;
-    margin-bottom:15px;
-    border-radius:8px;
-    border:1px solid #ddd;
+    box-shadow:0 20px 40px rgba(0,0,0,.2);
+    animation:fadeUp 1.4s ease;
 }
 
 /* FOOTER */
 footer{
     background:#111827;
     color:white;
-    padding:25px;
+    padding:30px;
     text-align:center;
 }
 
 /* ANIMATION */
 @keyframes fadeUp{
-    from{opacity:0; transform:translateY(30px);}
-    to{opacity:1; transform:translateY(0);}
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 </style>
 </head>
@@ -241,7 +160,7 @@ footer{
 <section class="hero">
 <div class="hero-content">
 <h1>Berozgar</h1>
-<p>Helping Educated Youth Find Local Jobs, Rooms, Food & Study Support</p>
+<p>Empowering Educated Youth with Local Jobs, Rooms, Food & Community Support</p>
 <a href="#jobs" class="btn">Join Now</a>
 </div>
 </section>
@@ -253,8 +172,8 @@ footer{
 <input type="text" placeholder="Enter your city (e.g. Nagpur)">
 <select>
 <option>Select Job Type</option>
-<option>Part Time</option>
 <option>Full Time</option>
+<option>Part Time</option>
 <option>Internship</option>
 <option>Freelance</option>
 </select>
@@ -268,20 +187,35 @@ footer{
 <div class="cards">
 <div class="card">
 <h3>🏠 Rooms on Rent</h3>
-<p>Find affordable rooms near your workplace.</p>
+<p>Affordable rooms near your job location.</p>
 </div>
 <div class="card">
 <h3>🍱 Tiffin & Mess</h3>
-<p>Healthy and budget-friendly meals for students & job seekers.</p>
+<p>Healthy and budget-friendly meals.</p>
 </div>
 <div class="card">
 <h3>📚 Coaching & Tutorials</h3>
-<p>Upgrade your skills and prepare for better opportunities.</p>
+<p>Upgrade skills and grow faster.</p>
 </div>
 <div class="card">
 <h3>📖 Books & Study Material</h3>
-<p>Recommended resources to grow and succeed.</p>
+<p>Recommended books for success.</p>
 </div>
+</div>
+</section>
+
+<!-- BACKBENCHERS ADDA -->
+<section class="section">
+<h2>🎒 Backbenchers Adda</h2>
+
+<div class="adda">
+<p style="font-size:20px;margin-bottom:25px;">
+A special community space for creative minds to discuss ideas, share struggles and help each other.
+</p>
+
+<textarea placeholder="Share your thoughts with the community..."></textarea>
+<a href="#" class="btn">Post Message</a>
+
 </div>
 </section>
 
